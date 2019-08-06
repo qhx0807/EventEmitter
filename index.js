@@ -1,8 +1,8 @@
 /**
- * EventEmiter
+ * EventEmitter
  */
 
-class EventEmiter {
+class EventEmitter {
   constructor () {
     this.events = Object.create(null)
   }
@@ -52,4 +52,10 @@ class EventEmiter {
   }
 }
 
-export default EventEmiter
+if (typeof define === 'function' && define.amd) {
+  define (function () { return EventEmitter })
+} else if (typeof module === 'object' && module.exports) {
+  module.exports = EventEmitter
+} else {
+  exports.EventEmitter = EventEmitter
+}

@@ -1,11 +1,14 @@
 {
-  "name": "eventemiter",
+  "name": "eventemitter",
   "version": "0.0.1",
-  "description": "javascript event emiter",
+  "description": "javascript event emitter",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "author": "qhx0807",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
 }
